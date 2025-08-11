@@ -1,13 +1,12 @@
+---
+layout: default
+title: Home
+---
 <section class="container hero">
   <picture>
-    <!-- AVIF first -->
-    <source type="image/avif"
-            srcset="{{ '/assets/images/pages/index/IMG_5117.jpeg' | relative_url }}">
-    <!-- Fallback: same file for now (works in modern browsers).
-         For older browsers, consider also uploading a JPG/WebP and using it here. -->
+    <source type="image/avif" srcset="{{ '/assets/images/pages/index/IMG_5117.avif' | relative_url }}">
     <img src="{{ '/assets/images/pages/index/IMG_5117.jpeg' | relative_url }}"
-         alt="Reef hero"
-         loading="eager">
+         alt="Reef hero" width="1600" height="900" loading="eager">
   </picture>
 
   <div class="overlay">
@@ -16,37 +15,5 @@
       <p class="muted">Premium aquacultured & sustainably collected coral for retailers and public aquariums.</p>
       <p><a class="btn" href="{{ '/wholesale#wholesale-form' | relative_url }}">Wholesale enquiry</a></p>
     </div>
-  </div>
-</section>
-<section class="container">
-  <div class="section-head"><h2>From the reef</h2></div>
-  <div class="grid cards">
-    <a class="card">
-      <div class="media">
-        <picture>
-          <source type="image/jpeg" srcset="{{ '/assets/images/pages/index/IMG_5114.jpeg' | relative_url }}">
-          <img src="{{ '/assets/images/pages/index/IMG_5114.jpeg' | relative_url }}" alt="Gallery 1" loading="lazy">
-        </picture>
-      </div>
-      <div class="body"><h3>Field shot</h3><p class="muted">Placeholder caption.</p></div>
-    </a>
-    <a class="card">
-      <div class="media">
-        <picture>
-          <source type="image/jpeg" srcset="{{ '/assets/images/pages/index/IMG_5115.jpeg' | relative_url }}">
-          <img src="{{ '/assets/images/pages/index/IMG_5115.jpeg' | relative_url }}" alt="Gallery 2" loading="lazy">
-        </picture>
-      </div>
-      <div class="body"><h3>Macro</h3><p class="muted">Placeholder caption.</p></div>
-    </a>
-    <a class="card">
-      <div class="media">
-        <picture>
-          <source type="image/jpeg" srcset="{{ '/assets/images/pages/index/IMG_5116.AVIF' | relative_url }}">
-          <img src="{{ '/assets/images/pages/index/IMG_5116.jpeg' | relative_url }}" alt="Gallery 3" loading="lazy">
-        </picture>
-      </div>
-      <div class="body"><h3>Tank light</h3><p class="muted">Placeholder caption.</p></div>
-    </a>
   </div>
 </section>
