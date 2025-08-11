@@ -1,0 +1,13 @@
+title: Aus Fish Coral
+description: Structured mirror
+include:
+  - _next
+  - .well-known
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - yarn.lock
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
